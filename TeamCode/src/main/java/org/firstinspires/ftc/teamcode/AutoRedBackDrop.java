@@ -602,9 +602,10 @@ public class AutoRedBackDrop extends LinearOpMode
 
 
                 Actions.runBlocking(
-                        drive.actionBuilder(drive.pose)
-                                .strafeTo(new Vector2d(5, -5))
-                                  .build());
+                drive.actionBuilder(drive.pose)
+                        .strafeTo(new Vector2d(5, -4))
+                        .build());
+
                 Actions.runBlocking(
                 drive.actionBuilder(drive.pose)
                         .lineToX(26)
@@ -612,18 +613,18 @@ public class AutoRedBackDrop extends LinearOpMode
 
                 Actions.runBlocking(
                         drive.actionBuilder(drive.pose)
-                                .lineToX(22)
+                                .lineToX(18)
                                 .build());
 
-                Actions.runBlocking(
+                /*Actions.runBlocking(
                         drive.actionBuilder(drive.pose)
                                // .splineTo(new Vector2d(18,-36), Math.toRadians(0))
                                 .turnTo(Math.toRadians(-90))
-                                .build());
+                                .build());*/
+
                 Actions.runBlocking(
                         drive.actionBuilder(drive.pose)
-                                // .splineTo(new Vector2d(18,-36), Math.toRadians(0))
-                                .lineToX(26)
+                                .splineTo(new Vector2d(22,-30), Math.toRadians(-90))
                                 .build());
 
 

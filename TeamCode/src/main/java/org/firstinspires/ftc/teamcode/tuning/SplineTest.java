@@ -25,7 +25,7 @@ public final class SplineTest extends LinearOpMode {
                     drive.actionBuilder(drive.pose)
                            // .strafeTo(new Vector2d(10,-8))
                             .setTangent(0)
-                            .splineTo(new Vector2d(40, 40), Math.toRadians(90))
+                            .splineTo(new Vector2d(40,-40), Math.toRadians(-90))
                             //.lineToY(-24)
 
                            // .lineToX(30)
